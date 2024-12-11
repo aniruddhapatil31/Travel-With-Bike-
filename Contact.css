@@ -53,7 +53,7 @@ h2 {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -69,7 +69,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 80%;
     margin: auto;
     flex-wrap: wrap;
   }
@@ -135,4 +135,110 @@ button {
 
 button:hover {
   background-color: #e55a00;
+}
+
+/* Responsive Styles */
+@media (min-width: 320px) and (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  header nav ul li a {
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  #container {
+    display: block;
+    width: 100%;
+  }
+
+  .text {
+    width: 90%;
+
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .form {
+    display: block;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+
+  .info-section {
+    width: 100%;
+  }
+
+  input,
+  select {
+    padding: 8px;
+    font-size: 0.6em;
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header nav ul {
+    gap: 0.8rem;
+  }
+
+  header nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 4rem;
+  }
+
+  header nav ul {
+    gap: 1rem;
+  }
+
+  header nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    margin-left: 5rem;
+  }
 }
