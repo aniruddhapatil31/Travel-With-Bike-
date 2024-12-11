@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="customworld.html">CustomWorld</a></li>
+                <li><a href="waystogo.html">WaysToGo</a></li>
+                <li><a href="Motorcycles.html">Motorcycles</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Contact us</h2>
+        <div id="container">
+            <div class="text">
+                <p>Do you have a question? Then simply fill out the contact form and send it to us. We will take care of
+                    your request as soon as possible.</p>
+            </div>
+            <div class="text">
+                <p>If you're on tour and want to stop by for a coffee, here's where to find us!</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="form">
+
+            <div class="form-section">
+                <h3>Personal data</h3>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="0b511bad-3913-45a3-81f2-5b95d67f19cc">
+                    <div class="form-row">
+                        <select name="Title" required>
+                            <option value="" disabled selected>Title*</option>
+                            <option value="mr">Mr</option>
+                            <option value="ms">Miss</option>
+                            <option value="ms">Mrs</option>
+                        </select>
+                        <input type="text" name="first-name" placeholder="First name*" required>
+                        <input type="text" name="last-name" placeholder="Last name*" required>
+                    </div>
+                    <div class="form-row">
+                        <select name="language" required>
+                            <option value="" disabled selected>Language*</option>
+                            <option value="english">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Marathi">Marathi</option>
+                        </select>
+                        <select name="nationality" required>
+                            <option value="" disabled selected>Nationality*</option>
+                            <option value="Ind">India</option>
+                            <option value="us">United State</option>
+                        </select>
+                    </div>
+
+                    <h3>Contact data</h3>
+                    <div class="form-row">
+                        <select name="County Code" required>
+                            <option value="" disabled selected>Country Code*</option>
+                            <option value="+91">+91</option>
+                            <option value="+1">+1</option>
+                        </select>
+                        <input type="text" name="mobile" placeholder="Mobile">
+                    </div>
+                    <input type="email" name="email" placeholder="E-mail address*" required>
+
+                    <button type="submit">Submit Form</button>
+                </form>
+            </div>
+
+
+
+
+
+
+            <div class="info-section">
+                <h3>Address</h3>
+                <p>JM Road<br>Shivajinagar<br>Pune</p>
+                <p>+91 8888145907<br>(for India only)<br>
+                    <a href="mailto:aniruddhapatil3103@gmail.com">aniruddhapatil3103@gmail.com</a>
+                </p>
+
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 08:00am to 06:00pm</p>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

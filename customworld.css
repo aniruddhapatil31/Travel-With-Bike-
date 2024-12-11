@@ -1,0 +1,362 @@
+/* Motorcycles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f4f4f9;
+    /* border: 1px solid red; */
+}
+header{
+    
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+header h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+nav ul li a {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.img img{
+    width: 100%;
+    height: auto;
+}
+/* Styling for the photo container */
+.photo {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the text on the image */
+.photo h2 {
+    position: absolute;
+    bottom: 45%;
+    left: 5%;
+    color: white;
+    padding: 5px 10px;
+    font-size: 2rem;
+    text-align: left;
+    text-shadow: 1px 1px 3px white;
+}
+#text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+.text1 h3{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    float: left;
+    width: 40%;
+
+}
+.text2 h3{
+    margin-top: 1rem;
+    margin-right: 2rem;
+    font-size: 1.1rem;
+    float: right;
+    width: 50%;
+
+}
+#builder{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.txt{
+    float: left;
+    width: 40%;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+
+}
+.txt h4{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-left: 2rem;
+
+}
+.img1 img{
+    float: right;
+    width:55%;
+    display: block;
+}
+.txt p{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 100%;
+}
+/* Footer */
+footer {
+    background: #d6d6d6;
+    color: #000000;
+    text-align: center;
+
+}
+footer h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+}
+footer q{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+           
+footer p {
+    font-size: 1rem;
+    line-height: 2;
+}
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.column {
+    width: 50%;
+    /* margin-bottom: 1rem; */
+}
+footer h6{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Heading Styling */
+.column h6 {
+    font-size: 30px;
+    color: #000000;
+}
+  
+  /* Paragraph Styling */
+  .column p {
+    font-size: 1rem;
+  }
+  
+  /* Link Styling: Call Button */
+  .call-button {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: #28a745;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .call-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Link Styling: Email */
+  .email-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+
+/* Responsive Design */
+
+/* Mobile View */
+@media(min-width: 320px) and (max-width: 768px) {
+    header h1{
+        font-size: 1.8rem;
+    } 
+
+    header nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    .photo h2 {
+        font-size: 0.8rem;
+    }
+    .text1 h3{
+        font-size: 0.6rem;
+        width: 38%;
+    }
+    .text2 h3{
+        font-size: 0.5rem;
+        width: 40%;
+    }
+    
+    .txt{
+        float: left;
+        width: 40%;
+        margin-top: 0rem;
+    }
+    .txt h4{
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 1.5rem;
+    }
+    .txt p{
+        font-size: 0.5rem;
+        float: left;
+        text-align: center;
+        margin-top: 0rem;
+    }
+    .img1 img{
+        float: right;
+        width:50%;
+        display: block;
+    }
+    
+    footer h2 {
+        font-size: 1rem;
+    }
+    .column h6{
+        font-size: 1rem;
+        
+    }
+    footer q {
+        font-size: 0.8rem;
+    
+    }
+    .column{
+        margin-top: 0rem;
+    }
+    .column p {
+        font-size: 0.6rem;
+    }
+    .call-button{
+        padding: 1px 6px;
+    }
+}
+
+/* Tablet View  */
+@media (min-width:768px) and (max-width: 1023px) {
+    header h1{
+        font-size: 3rem;
+    }
+    header nav ul {
+        gap: 0.8rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.4rem;
+    }
+
+    .photo h2 {
+        font-size: 1.8rem;
+    }
+    .text1 h3{
+        font-size: 0.9rem;
+        width: 40%;
+    }
+    .text2 h3{
+        font-size: 0.8rem;
+        width: 50%;
+    }
+    .txt {
+        font-size: 1.3rem;
+        margin-top: 0rem;
+        align-content: center;
+    }
+    .txt h4{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+    .txt p{
+        font-size: 0.8rem;
+        float: left;
+        text-align: center;
+        margin-top: 0rem;
+    }
+
+    footer h2 {
+        font-size: 1.8rem;
+    }
+
+    footer q {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+    .column h6{
+        font-size: 1.5rem;
+    }
+    .column p{
+        font-size: 0.8rem;
+    }
+}
+
+/* Laptop/Desktop View (1025px and up) */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 4rem;
+    }
+    header nav ul {
+        gap: 1rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+    .text1 {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .text2 {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .txt {
+        font-size: 2rem;
+        align-content: center;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+    }
+
+    footer q {
+        font-size: 1.5rem;
+    }
+}

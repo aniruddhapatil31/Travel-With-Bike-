@@ -1,0 +1,315 @@
+/* Motorcycles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    /* border: 1px solid red; */
+}
+header{
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+}
+header h1{
+    font-size: 2rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+nav ul li a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#Motorcycles{
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #ede9e9;
+    color: black;
+}
+
+#Motorcycles i{
+    font-size: 2rem;
+    padding:2rem 0;
+    display: flex;
+    justify-content: center;
+}
+#Motorcycles i{
+    display: none;
+}
+#Motorcycles i{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+#Motorcycles h2{
+    
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#Motorcycles h4{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 4rem ;
+}
+.container {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.img1 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+.img1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background: #000da0;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+footer h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+}
+footer q{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+           
+footer p {
+    font-size: 1rem;
+    line-height: 2;
+}
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.column {
+    width: 50%;
+}
+footer h6{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+footer a {
+    color: #00e1ff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Heading Styling */
+.column h6 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    color: #ffffff;
+}
+  
+  /* Paragraph Styling */
+  .column p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  /* Link Styling: Call Button */
+  .call-button {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: #28a745;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .call-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Link Styling: Email */
+  .email-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+/* Mobile View */
+@media (min-width: 320px) and (max-width: 768px) {
+    header h1{
+        font-size: 1.8rem;
+    }
+    header nav ul {
+        flex-direction: row;
+        /* margin-top: -0.7rem; */
+        gap: 0.5rem;
+    }
+
+    header nav ul li a {
+        font-size: 0.6rem;
+    }
+    #Motorcycles h2 {
+        font-size: 1.2rem;
+    }
+
+    #Motorcycles h4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .img1 {
+        padding: 8px;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+    }
+
+    footer q {
+        font-size: 1.2rem;
+    }
+    .column h6{
+        font-size: 1rem;
+    }
+    .column p{
+        font-size: 0.7rem;
+    }
+    .call-button{
+        font-size: 0.7rem;
+    }
+    
+}
+
+/* Tablet View */
+@media (min-width:768px) and (max-width: 1024px) {
+    header h1{
+        font-size: 3rem;
+    }
+    header nav ul {
+        gap: 0.8rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.4rem;
+    }
+    #Motorcycles h2 {
+        font-size: 1.4rem;
+    }
+
+    #Motorcycles h4 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .img1 {
+        padding: 10px;
+    }
+
+    footer h2 {
+        font-size: 2.3rem;
+    }
+        footer h6{
+        font-size: 2.5rem;
+    }
+    footer q {
+        font-size: 2rem;
+    }
+    
+
+    /* footer .column {
+        width: 30%;
+    } */
+}
+
+/* Laptop and Desktop View */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 4rem;
+    }
+    header nav ul {
+        gap: 1rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    #Motorcycles h2 {
+        font-size: 1.5rem;
+    }
+
+    #Motorcycles h4 {
+        font-size: 2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    footer h2 {
+        font-size: 2.5rem;
+    }
+    footer h6{
+        font-size: 2.5rem;
+    }
+    footer q {
+        font-size: 1.5rem;
+    }
+
+    /* footer .column {
+        width: 50%;
+    } */
+    
+}
+ 
